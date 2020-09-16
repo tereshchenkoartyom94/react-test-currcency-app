@@ -1,13 +1,15 @@
 import React, {FunctionComponent} from 'react';
+
 import { Header } from "../Header";
-import {CurrencyTable} from "../CurrencyTable";
+import {ConnectedCurrencyTable} from "../CurrencyTable";
+import { store } from "../../store/createStore";
 
 export const Entry: FunctionComponent<any> = () => {
     return (
        
         <>
             <Header></Header>
-            <CurrencyTable data={undefined}/>
+            <ConnectedCurrencyTable />
         </>  
     )
 }
